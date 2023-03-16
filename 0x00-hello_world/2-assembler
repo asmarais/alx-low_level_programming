@@ -1,2 +1,2 @@
 #!/bin/bash
-gc -c -S $CFILE
+gc -S $CFILE
