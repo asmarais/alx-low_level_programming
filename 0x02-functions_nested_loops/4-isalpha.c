@@ -3,6 +3,7 @@
 /**
  *_isalpha - check if the caracter is a letter or not.
  *@c: the caracter to check
+ *
  *Return: 1 if it is a letter 0 otherwise.
  */
 
