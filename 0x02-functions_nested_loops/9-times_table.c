@@ -15,26 +15,26 @@ void times_table(void)
 		{
 			c = a * b;
 			if (c > 9)
-            {
-                u = c % 10;
-                z = (c-u) / 10;
-                _putchar(',');
-                _putchar(' ');
-                _putchar(u + '0');
-                _putchar(z + '0');
-            }
-            else
-            {
-                if (b != 0)
-            {
-                    _putchar(',');
-                    _putchar(' ');
-                    _putchar(' ');
-            }
-                _putchar(c + '0');
-            }
+			{
+                		u = c % 10;
+                		z = (c-u) / 10;
+                		_putchar(',');
+                		_putchar(' ');
+                		_putchar(u + '0');
+                		_putchar(z + '0');
+            		}
+           		 else
+            		{
+                		if (b != 0)
+            			{
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+				}
+				_putchar(c + '0');
+			}
 		}
 
-            _putchar('\n');
+		_putchar('\n');
 	}
 }
