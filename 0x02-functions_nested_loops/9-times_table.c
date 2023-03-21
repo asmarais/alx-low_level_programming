@@ -20,8 +20,9 @@ void times_table(void)
 				z = (c - u) / 10;
 				_putchar(',');
 				_putchar(' ');
-				_putchar(u + '0');
 				_putchar(z + '0');
+				_putchar(u + '0');
+
 			}
 			else
 			{
