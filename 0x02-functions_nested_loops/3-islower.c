@@ -2,19 +2,15 @@
 
 /**
  * _islower : check if the character is lowercase or not
+ * @c: The character to be checked
  *
  * Return : 1 if it is lowercase and 0 otherwise.
  */
 
 int _islower(int c)
 {
-	char ch;
-
-	for (ch = 'a'; ch <= 'z'; ch++)
-	{
-		if(c == ch)
-			return (1);
-	}
+	if (c >= int('a') && c <= int('z'))
+		return (1);
 
 	return (0);
 }
