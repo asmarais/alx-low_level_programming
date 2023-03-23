@@ -4,6 +4,7 @@
 /**
  * main - print Fizz when the number is /3, Buzz when the number is /5
  * and FizzBuzz when it is /5 and 3
+ *
  * Return: always 0.
  */
 
