@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  * main - print Fizz when the number is /3, Buzz when the number is /5
