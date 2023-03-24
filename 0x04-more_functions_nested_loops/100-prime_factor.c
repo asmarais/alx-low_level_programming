@@ -1,3 +1,4 @@
+#include "main.h"
 #include <stdio.h>
 #include<math.h>
 
@@ -9,7 +10,7 @@
 
 int main(void)
 {
-	long long n, m, i, max = 0;
+	long int n, i, max = 0;
 
 	n = 612852475143;
 
@@ -21,7 +22,7 @@ int main(void)
 			n = n / i;
 		}
 	}
-	printf("%lld", max);
+	printf("%ld", max);
 
 	return (0);
 }
