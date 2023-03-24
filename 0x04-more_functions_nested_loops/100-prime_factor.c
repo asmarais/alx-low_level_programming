@@ -14,12 +14,12 @@ int main(void)
 
 	n = 612852475143;
 
-	for (i = 3; i <= sqrt(n); i += 2)
+	for (i = (long)sqrt(n); i < n; i++)
 	{
-		while (n % i == 0)
+		if (n % i == 0)
 		{
 			max = i;
-			n = n / i;
+			break;
 		}
 	}
 	printf("%ld\n", max);
