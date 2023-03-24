@@ -1,5 +1,4 @@
 #include "main.h"
-#include<math.h>
 
 /**
  * print_number - prints numbers
@@ -9,7 +8,7 @@
 
 void print_number(int n)
 {
-	int u, count = -1, num;
+	int u, count = -1, num, p = 1, i = 1;
 
 	num = n;
 
@@ -24,15 +23,19 @@ void print_number(int n)
 		num = (num - num % 10) / 10;
 		count++;
 	}
-
+	
+	while(i <= count)
+    	{
+        	p = p * 10;
+        	i++;
+    	}
 	while (count != 0)
 	{
-		int p = (int)pow(10, count);
-
 		u = (int)(n / p);
 		_putchar(u + '0');
 		count--;
 		n -= u * p;
+		p /= 10;
 	}
 	if (n <= 9)
 	{
