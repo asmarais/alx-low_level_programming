@@ -23,12 +23,11 @@ void print_number(int n)
 		num = (num - num % 10) / 10;
 		count++;
 	}
-	
-	while(i <= count)
-    	{
-        	p = p * 10;
-        	i++;
-    	}
+	while (i <= count)
+	{
+		p = p * 10;
+		i++;
+	}
 	while (count != 0)
 	{
 		u = (int)(n / p);
@@ -41,5 +40,4 @@ void print_number(int n)
 	{
 		_putchar('0' + n);
 	}
-
 }
