@@ -1,0 +1,29 @@
+#include "main.h"
+
+/**
+ * puts_half - print half a string.
+ * @s: pointer to the first character
+ * Return: void
+ */
+
+void puts_half(char *s)
+{
+	char *begin, *end;
+	int count = 0;
+
+	begin = s;
+
+	while (*begin != '\0')
+	{
+		count++;
+		begin++;
+	}
+	end = s + (count - 1) / 2 + 1;
+
+	while (*end != '\0')
+	{
+		_putchar(*end);
+		end++;
+	}
+    _putchar('\n');
+}
