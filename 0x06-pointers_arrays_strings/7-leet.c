@@ -8,25 +8,23 @@
 
 char *leet(char *s)
 {
-	char *begin;
-	int i;
+	int i = 0, j;
 
-	begin = s;
 	char arr[10] = {'4', '4', '3', '3', '0', '0', '7', '7', '1', '1'};
 	char index[10] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
 
-	while (*begin != '\0')
+	while (s[i] != '\0')
 	{
 
-		for (i = 0; i < 10; i++)
+		for (j = 0; j < 10; j++)
 		{
-			if (*begin == arr[i])
+			if (s[i] == arr[j])
 			{
-				*begin = index[i];
+				s[i] = index[j];
 			}
 		}
 
-		begin++;
+		i++;
 	}
 
 	return (s);
