@@ -12,7 +12,8 @@ char *leet(char *s)
 	int i;
 
 	begin = s;
-	char arr[8] = {'o', 'l', '*', 'e', 'a', '*', '*', 't'};
+	char arr[8] = {'4', '4', '*', 'e', 'a', '*', '*', 't'};
+	char index[] = {'a', 'A',
 
 	while (*begin != '\0')
 	{
