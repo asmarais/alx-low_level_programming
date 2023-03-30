@@ -12,19 +12,17 @@ char *leet(char *s)
 	int i;
 
 	begin = s;
-	char arr[8] = {'4', '4', '*', 'e', 'a', '*', '*', 't'};
-	char index[] = {'a', 'A',
+	char arr[10] = {'4', '4', '3', '3', '0', '0', '7', '7', '1', '1'};
+	char index[10] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
 
 	while (*begin != '\0')
 	{
 
-		for (i = 0; i < 8; i++)
+		for (i = 0; i < 10; i++)
 		{
-			if (*begin == arr[i] ||
-			    *begin == (char)((int)arr[i] - 32)
-			    && arr[i] != '*')
+			if (*begin == arr[i])
 			{
-				*begin = (char)(i + '0');
+				*begin = index[i];
 			}
 		}
 
