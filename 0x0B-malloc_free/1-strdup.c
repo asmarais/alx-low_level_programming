@@ -21,10 +21,10 @@ char *_strdup(char *str)
 	arr = malloc(a * sizeof(char));
 	while (x < a)
 	{
-		if (ptr == NULL)
+		if (arr == NULL)
 			return (NULL);
-		ptr[x] = str[x];
+		arr[x] = str[x];
 		x++;
 	}
-	return (ptr);
+	return (arr);
 }
