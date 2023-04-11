@@ -14,10 +14,11 @@ char *_strdup(char *str)
 	int a = 0, x = 0;
 	char *arr;
 
-	while (str[a] != '\0')
-		a++;
 	if (str == NULL)
 		return (NULL);
+	while (str[a] != '\0')
+		a++;
+	a++;
 	arr = malloc(a * sizeof(char));
 	while (x < a)
 	{
