@@ -23,5 +23,5 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		arr[count] = 0;
 		count++;
 	}
-	return (count);
+	return (arr);
 }
