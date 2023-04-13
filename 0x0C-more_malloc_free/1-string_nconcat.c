@@ -43,13 +43,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	arr = malloc(size * sizeof(char));
 	if (arr == NULL)
 		return (NULL);
-	while (x < size1)
+	while (x <= size1)
 	{
 		arr[x] = s1[x];
 		x++;
 	}
 	x = 0;
-	while (x < n)
+	while (x <= n)
 	{
 		arr[size1 + x] = s2[x];
 		x++;
