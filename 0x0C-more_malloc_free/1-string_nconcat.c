@@ -37,9 +37,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s2 = "";
 	size1 = _strlen(s1);
 	size2 = _strlen(s2);
-	if (size2 > n)
-		size2 = n;
-	size = size1 + size2 + 1;
+	if (size2 <= n)
+		n = size2;
+	size = size1 + n + 1;
 	arr = malloc(size * sizeof(char));
 	if (arr == NULL)
 		return (NULL);
@@ -49,7 +49,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		x++;
 	}
 	x = 0;
-	while (x < size2)
+	while (x < n)
 	{
 		arr[size1 + x] = s2[x];
 		x++;
