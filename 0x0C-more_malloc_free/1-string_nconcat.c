@@ -7,9 +7,9 @@
  * @s: char type
  * Return:  length of string
  */
-int _strlen(char *s)
+unsigned int _strlen(char *s)
 {
-	int a;
+	unsigned int a;
 
 	for (a = 0; s[a] != '\0'; a++)
 	{
@@ -28,7 +28,7 @@ int _strlen(char *s)
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int size1, size2, size, x = 0;
+	unsigned int size1, size2, size, x = 0;
 	char *arr;
 
 	if (s1 == NULL)
