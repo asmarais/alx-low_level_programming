@@ -30,7 +30,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (arr == NULL)
 		return (NULL);
 	
-	for (count = 0; count < len1; count++)
+	for (count = 0; count < size1; count++)
 	{
 		arr[count] = s1[count];
 	}
