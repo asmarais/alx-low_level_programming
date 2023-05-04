@@ -16,7 +16,7 @@ unsigned int binary_to_uint(const char *b)
 	len = strlen(b);
 	while (len)
 	{
-		if (b[len - 1] != '1' && b[len -1] != '0')
+		if (b[len - 1] != '1' && b[len - 1] != '0')
 			return (0);
 		if (b[len - 1] == '1')
 			n += base;
