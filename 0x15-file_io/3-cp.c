@@ -2,7 +2,7 @@
 #include <fcntl.h>
 #include <stdio.h>
 #include <stdlib.h>
-
+int safe_close(int);
 /**
  * main - Main function to copy files
  * @argc: The number of passed arguments
