@@ -1,0 +1,19 @@
+#include "function_pointers.h"
+
+/**
+ * print_name - a function that prints a name.
+ * @name: a pointer to string
+ * @f: a pointer to a function that takes char as its parameter
+ * and return void
+ *Return: void
+ */
+
+void print_name(char *name, void (*f)(char *))
+{
+	int len = 0, i;
+
+	while (name[len])
+		len++;
+	for (i = 0; name[i]; i++)
+		_puchar(name[i]);
+}
