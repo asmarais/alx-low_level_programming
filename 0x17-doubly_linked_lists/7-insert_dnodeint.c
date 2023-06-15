@@ -5,6 +5,7 @@
  * @h: a pointer that points at the head
  * @idx: the potion of the new node
  * @n: the value to be added
+ * Return: the address of the node or NULL
  */
 
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
