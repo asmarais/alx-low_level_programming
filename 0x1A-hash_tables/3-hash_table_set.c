@@ -14,7 +14,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	hash_node_t *node, *new;
 	char *cp_value;
 
-	if (key == NULL || *key == '\0' || ht == NULL || value == NULL)
+	if (key == NULL || *key == '\0' || ht == NULL || value == NULL || !ht->array)
 		return (0);
 
 	cp_value = strdup(value);
@@ -33,6 +33,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 			node->value = cp_value;
 			return (1);
 		}
+		node = node->next;
 	}
 	new->key = strdup(key);
 	new->value = cp_value;
